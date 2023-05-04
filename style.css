@@ -80,3 +80,88 @@ a:hover {
 #contact p:last-child {
     margin-top: 3rem;
 }
+
+nav {
+    font-family: var(--mono);
+    font-size: 80%;
+    padding: 1rem 0;
+}
+
+nav h1 a {
+    font-family: var(--sans);
+
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items:center;
+    gap: 2rem;
+    background-color: var(--plum);
+}
+
+nav li:first-child {
+    flex-basis: 100%;
+    text-align: center;
+}
+
+nav a {
+    color: var(--white);
+    text-decoration: none;
+    padding: 1rem;
+    display: block;
+}
+
+nav a :hover {
+    color: var(--hotmag);
+
+}
+
+.button {   
+    background-color:var(--plum);
+    padding: 1rem 2rem;
+    border-radius: 5px;
+}
+
+.button:hover {
+    color:white;
+    background-color: var(--hotmag);
+}
+
+footer {
+    background-color: var(--plum);
+    padding: 1rem 0;
+    text-align: center;
+}
+
+footer p a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+footer p a:hover {
+    color: var(--hotmag);
+    padding: 1rem 2rem;
+    border-radius: 5px;
+
+}
+
+@media (min-width: 850px){
+    nav {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    nav li:first-of-type{
+        flex-basis: auto;
+        text-align: left;
+        margin-right:auto;
+    }
+    footer {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}
